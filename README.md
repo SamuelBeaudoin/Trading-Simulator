@@ -7,4 +7,9 @@ Here is an example of the database. The data in the database is wrong because it
 ![image](https://user-images.githubusercontent.com/73494088/133295898-7809e294-7c70-48f7-bb18-784793f82227.png)
 
 
+Show below is the website which displays the financial information stored in the database.
+![image](https://user-images.githubusercontent.com/73494088/137817414-ec6077ce-7ce2-4e27-bf1f-2b0a2d8ad6f5.png)
+
+
+
 
