@@ -1,0 +1,13 @@
+////////Delete first row///////////////////
+con = sqlite3.connect('TradingProgress.db')
+cur = con.cursor()
+cur.execute("DELETE from stocks where week=1")
+con.commit()
+con.close()
+
+///////Set first row to 1//////////////////
+con = sqlite3.connect('TradingProgress.db')
+cur = con.cursor()
+cur.execute("UPDATE stocks SET week=1 WHERE week=2")
+con.commit()
+con.close()

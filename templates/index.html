@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/stylesheet.css">
+</head>
+<div class="body">
+
+	<header class="header">
+		<nav>
+			<ul>
+				<li>
+					Algorithmic Trading Simulation
+				</li>
+			</ul>
+		</nav>
+
+
+	</header>
+
+	<div class="mainContent">
+		<div class="content">
+				<article class="content-1">
+					<header>
+						<h2>What is this?</h2>
+					</header>
+
+					<footer>
+						<p class="post-from">Shown below is an explanation for how the project works and what is displayed on the page</p>
+					</footer>
+
+					<content>
+						<p>This entire project is ran from a python script which is activated by going to a hidden URL path.</p>
+						<p>This is the equivalent of a demo account, but it is created by Samuel Beaudoin and is instead managed by a trading algorithm (Portfolio Rebalancing).</p>
+						<p>The account starts with $50,000.</p>
+						<p>Every 5 days, the portfolio which is displayed in "Current portfolio" is rebalanced (it replaces the 3 worst performing stocks with the best performing stocks of the last 5 days). This means that every 5 days, the data on this page is automatically updated according to what is stored in the database.</p>
+					</content>
+
+				</article>
+
+				<article class="content-2">
+					<header>
+						<h2>Portfolio Transaction History</h2>
+					</header>
+
+					<footer>
+						<p class="post-from">Shown below is a list of past transactions made by the trading algorithm</p>
+					</footer>
+
+					<content>
+						<table>
+							<tr>
+								<th>Week</th>
+								<th>Date</th>
+								<th>Balance</th>
+								<th>Percent Profit</th>
+								<th>New Picks</th>
+								<th>Portfolio</th>
+								<th>Investment</th>
+							</tr>
+							{% for row in fullQuery %}
+							<tr>
+								{% for things in row %}
+								<td>{{things}}</td>
+								{% endfor %}
+							</tr>
+							{% endfor %}
+						</table>
+					</content>
+
+				</article>
+		</div>
+
+				<aside class="sidebar-1">
+					<article>
+					<h2>Current portfolio</h2>
+						<br>
+					<p>{{portfolio}}</p>
+				    </article>
+				</aside>
+
+				<aside class="sidebar-2">
+					<article>
+					<h2>Average investment return</h2>
+						<br>
+					<p>{{averageReturn}}</p>
+				    </article>
+				</aside>
+
+				<aside class="sidebar-3">
+					<article>
+					<h2>Total portfolio balance</h2>
+						<br>
+					<p>{{portfolioBalance}}</p>
+				    </article>
+				</aside>
+	</div>
+
+	<footer class="footer">
+		<p>Copyright &copy; 2021 <a href="">Samuel Beaudoin</a></p>
+	</footer>
+
+</div>
+</html>
