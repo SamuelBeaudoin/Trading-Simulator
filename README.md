@@ -9,7 +9,8 @@ Show below is what the databse looks like (It contains test data).
 
 
 Show below is the website which displays the financial information stored in the database.
-![image](https://user-images.githubusercontent.com/73494088/137817414-ec6077ce-7ce2-4e27-bf1f-2b0a2d8ad6f5.png)
+![image](https://user-images.githubusercontent.com/73494088/139358076-10c3534f-5392-4010-9cff-b7b15ca68733.png)
+
 
 
 
