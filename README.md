@@ -1,11 +1,31 @@
-# Trading-Simulator
-An algorithmic stock trading simulator program. Uses Yahoo finance data sets to calculate profits that would be made if my trading algorithm bought stocks in real life and stores all the relevant information in a database.
+# Algorithmic Stock Trading Simulator
 
-Every 5 days, my algorithm (portolio rebalancing) rebalances the portfolio of stocks that were purchased the week before. This means that every 5 days, the web site will display a new transaction order, total balance, average investment return and more... This project uses flask and a web hosting website called PythonAnywhere.
+This project is a stock trading simulator program that utilizes Yahoo Finance data sets to simulate trading activities based on a custom algorithm. The program calculates potential profits that would be made if the trading algorithm were to buy stocks in real life and stores all relevant information in a database.
 
+## Features
 
-Show below is what the databse looks like (It contains test data).
-![image](https://user-images.githubusercontent.com/73494088/133295898-7809e294-7c70-48f7-bb18-784793f82227.png)
+- Utilizes Yahoo Finance data sets for stock information.
+- Implements a custom algorithm for trading simulation.
+- Rebalances the portfolio every 5 days based on portfolio rebalancing strategy.
+- Displays transaction orders, total balance, average investment return, and more on a web interface.
+- Built using Flask framework for web development.
+- Hosted on PythonAnywhere for online access.
+
+## Database Structure
+
+The database contains the following tables (with test data):
+
+- **Table 1**: [Description]
+- **Table 2**: [Description]
+- **Table 3**: [Description]
+  
+  ![image](https://user-images.githubusercontent.com/73494088/133295898-7809e294-7c70-48f7-bb18-784793f82227.png)
+
+![Database Screenshot](/path/to/database_screenshot.png)
+
+## Web Interface
+
+The website displays financial information stored in the database, including transaction orders, total balance, average investment return, and more.
 
 
 Show below is the website which displays the financial information stored in the database.
