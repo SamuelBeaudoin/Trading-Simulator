@@ -15,10 +15,6 @@ This project is a stock trading simulator program that utilizes Yahoo Finance da
 
 The database contains the following tables (with test data):
 
-- **Table 1**: [Description]
-- **Table 2**: [Description]
-- **Table 3**: [Description]
-
 ![image](https://user-images.githubusercontent.com/73494088/133295898-7809e294-7c70-48f7-bb18-784793f82227.png)
 
 
